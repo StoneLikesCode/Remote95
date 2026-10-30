@@ -4,6 +4,10 @@ A desktop remote control for Google TV / Android TV sets, styled like a 90s
 homepage: Windows 95 buttons, pixel-art icons, a scrolling marquee and a
 "hit counter" that counts your button presses.
 
+<p align="center">
+  <img src="remote95.png" alt="Remote 95: a Windows 95-style remote with a starfield background, rainbow title and hit counter" width="290">
+</p>
+
 It talks to the TV over your home network using the same protocol as the
 Google TV phone app (via the [androidtvremote2] library), so there's nothing
 to install on the TV. Tested on a TCL Google TV.
