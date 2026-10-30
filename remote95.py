@@ -7,8 +7,8 @@ androidtvremote2 library. The first run pairs with the TV: a code appears
 on the TV screen and you type it into this terminal.
 
 Usage:
-    python googletv_remote.py <tv-ip>   # first time (remembers the IP)
-    python googletv_remote.py                # afterwards
+    python remote95.py <tv-ip>   # first time (remembers the IP)
+    python remote95.py                # afterwards
 
 Keyboard shortcuts:
     Arrows = move, Enter = OK, Backspace/Esc = Back, H = Home,
@@ -702,7 +702,7 @@ def main():
         host = HOST_FILE.read_text().strip()
     else:
         print('Give the TV\'s IP address the first time, e.g.\n'
-              '  python googletv_remote.py <tv-ip>')
+              '  python remote95.py <tv-ip>')
         return
 
     runner = AsyncRunner()

@@ -67,22 +67,22 @@ pip install androidtvremote2
 2. The first time, run it from a terminal with that address:
 
    ```sh
-   python googletv_remote.py <tv-ip>
+   python remote95.py <tv-ip>
    ```
 
 3. A pairing code appears on the TV. Type it into the terminal.
 4. The remote opens. From then on it remembers the TV, so just run:
 
    ```sh
-   python googletv_remote.py
+   python remote95.py
    ```
 
 On Windows, run it with MSYS2's Python, e.g.
-`C:\msys64\ucrt64\bin\python.exe googletv_remote.py`. To get a clickable
+`C:\msys64\ucrt64\bin\python.exe remote95.py`. To get a clickable
 icon with no console window, make a shortcut to
 `C:\msys64\ucrt64\bin\pythonw.exe` with the full path to
-`googletv_remote.py` as its argument, and set its icon to
-`googletv-remote.ico`. Pairing and connection errors are printed to the
+`remote95.py` as its argument, and set its icon to
+`remote95.ico`. Pairing and connection errors are printed to the
 console, so do the first run from a terminal.
 
 If the TV's IP address changes, run it once more with the new address.
