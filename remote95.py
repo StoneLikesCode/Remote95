@@ -28,7 +28,7 @@ from gi.repository import Gtk, Gdk, GdkPixbuf, GLib
 from androidtvremote2 import (AndroidTVRemote, CannotConnect,
                               ConnectionClosed, InvalidAuth)
 
-CONFIG_DIR = Path.home() / '.googletv_remote'
+CONFIG_DIR = Path.home() / '.remote95'
 CERT = CONFIG_DIR / 'cert.pem'
 KEY = CONFIG_DIR / 'key.pem'
 HOST_FILE = CONFIG_DIR / 'host.txt'
