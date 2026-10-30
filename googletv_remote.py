@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""A small GTK 3 remote for Google TV / Android TV sets (e.g. TCL 55Q750G).
+"""Remote 95: a small, 90s-styled GTK 3 remote for Google TV / Android TV
+sets (e.g. TCL 55Q750G).
 
 Uses the same protocol as the Google TV phone remote, via the
 androidtvremote2 library. The first run pairs with the TV: a code appears
@@ -77,7 +78,7 @@ SHORTCUTS = {
     'MENU': 'N', 'MEDIA_REWIND': '< or ,', 'MEDIA_FAST_FORWARD': '> or .',
 }
 
-MARQUEE = ('*** WELCOME 2 MY GOOGLE TV REMOTE PAGE!!! *** '
+MARQUEE = ('*** WELCOME 2 REMOTE 95!!! *** '
            'Now connected to {host} *** Sign my guestbook! *** '
            'Best viewed at 800x600 *** ')
 
@@ -471,7 +472,7 @@ def connect(runner, host):
 
 class RemoteWindow(Gtk.Window):
     def __init__(self, runner, remote, host):
-        super().__init__(title='Google TV Remote - ' + host)
+        super().__init__(title='Remote 95 - ' + host)
         self.runner = runner
         self.remote = remote
         self.set_border_width(10)
@@ -485,7 +486,7 @@ class RemoteWindow(Gtk.Window):
 
         # ---- Geocities header ----
         title = Gtk.Label()
-        title.set_markup(rainbow('Google TV Remote'))
+        title.set_markup(rainbow('Remote 95'))
         page.pack_start(title, False, False, 0)
 
         self.marquee_text = MARQUEE.format(host=host)

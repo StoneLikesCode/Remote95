@@ -1,4 +1,4 @@
-# Google TV Remote
+# Remote 95
 
 A desktop remote control for Google TV / Android TV sets, styled like a 90s
 homepage: Windows 95 buttons, pixel-art icons, a scrolling marquee and a
