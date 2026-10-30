@@ -390,16 +390,22 @@ def load_clicks():
         return 0
 
 
+def make_config_dir():
+    """Create ~/.remote95, readable only by you: it holds the pairing key."""
+    CONFIG_DIR.mkdir(mode=0o700, exist_ok=True)
+    CONFIG_DIR.chmod(0o700)  # also tighten a folder from an older version
+
+
 def save_clicks(count):
     try:
-        CONFIG_DIR.mkdir(exist_ok=True)
+        make_config_dir()
         CLICKS_FILE.write_text(str(count))
     except OSError:
         pass  # a lost count isn't worth crashing the remote over
 
 
 def install_theme():
-    CONFIG_DIR.mkdir(exist_ok=True)
+    make_config_dir()
     tile = CONFIG_DIR / 'stars.png'
     if not tile.exists():
         starfield_tile(tile)
@@ -433,7 +439,7 @@ class AsyncRunner:
 
 def connect(runner, host):
     """Create the remote, pairing first if needed. Returns the remote."""
-    CONFIG_DIR.mkdir(exist_ok=True)
+    make_config_dir()
 
     async def setup():
         remote = AndroidTVRemote(CLIENT_NAME, str(CERT), str(KEY), host)

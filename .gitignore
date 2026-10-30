@@ -1,4 +1,12 @@
 __pycache__/
-*.pyc
+*.py[cod]
+.venv/
+venv/
+.env
+
 # Pairing keys and settings live in ~/.remote95, but never commit them
 *.pem
+*.key
+host.txt
+clicks.txt
+stars.png
