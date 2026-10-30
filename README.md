@@ -89,8 +89,8 @@ If the TV's IP address changes, run it once more with the new address.
 
 ## Where it keeps its data
 
-Everything is saved in a `.googletv_remote` folder in your home folder
-(`%USERPROFILE%\.googletv_remote` on Windows), not in this project:
+Everything is saved in a `.remote95` folder in your home folder
+(`%USERPROFILE%\.remote95` on Windows), not in this project:
 
 | File | What it is |
 |---|---|

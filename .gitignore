@@ -1,4 +1,4 @@
 __pycache__/
 *.pyc
-# Pairing keys and settings live in ~/.googletv_remote, but never commit them
+# Pairing keys and settings live in ~/.remote95, but never commit them
 *.pem
