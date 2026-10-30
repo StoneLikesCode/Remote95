@@ -1,0 +1,14 @@
+{
+  "python.defaultInterpreterPath": "C:\\msys64\\ucrt64\\bin\\python.exe",
+  "terminal.integrated.env.windows": {
+    "PATH": "C:\\msys64\\ucrt64\\bin;${env:PATH}"
+  },
+  "terminal.integrated.profiles.windows": {
+    "MSYS2 UCRT64": {
+      "path": "C:\\msys64\\usr\\bin\\bash.exe",
+      "args": ["--login", "-i"],
+      "env": { "MSYSTEM": "UCRT64", "CHERE_INVOKING": "1" }
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "MSYS2 UCRT64"
+}
